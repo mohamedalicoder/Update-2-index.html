@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav{
+  width: 100%;
+  height: 80px;
+  background: #243238;
+  position: fixed;
+  z-index:99 ;
+}
+
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.anmy{
+  color: yellow;
+  animation-name: look;
+  animation-duration:  4s;
+  animation-iteration-count: infinite;
+}
+@keyframes look{
+  /* 0% {transform: scale(1);}
+  50% {transform: scale(.9); opacity: .5;}
+  100% {transform: scale(1.1);} */
+0%{opacity: 0;}
+50%{opacity:  1;}
+100%{opacity: 0;}
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  text-decoration: none;
+  color:white ;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  
+}
+a.active,a:hover{
+  color: yellow;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+#lang{
+  margin-right: 25px;
+}
+#btnt{
+  animation-duration: 4s;
+  animation-name: exm;
+  animation-iteration-count: infinite;
+}
+@keyframes exm{
+  0% {transform: translateY(-20px)}
+  50% {transform: translateY(20px) rotateZ(365deg)}
+  100% {transform: translateY(-20px)}
+}
+@media (max-width:860px) {
+
+  
+}
+
+
+
+/* second section  */
+
+  .second_section{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../assets/top-view-sand-meeting-seawater\ \(1\).jpg);
+    color: white;
+    position: relative;
+  }
+
+  .welcome_bage{
+
+    position: absolute;
+    top: 250px;
+    left: 100px;
+  
+  }
+  .welcome_bage p{
+    font-size: 27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+.welcome_bage h2{
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.welcome_bage button{
+  height: 50px;
+  margin-top: 20px;
+}
+
+
+
+/* three dives  */
+
+
+
+
+
